@@ -1,1 +1,1 @@
-Sitemap: https://farleylai.github.io/notes/sitemap.xml
+Sitemap: https://farley.futuresight.io/sitemap.xml
