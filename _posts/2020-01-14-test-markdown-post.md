@@ -4,7 +4,8 @@ description: A minimal example of using markdown with fastpages.
 hide: true
 toc: true
 layout: post
-categories: [markdown]---
+categories: [markdown]
+---
 # Example Markdown Post
 
 ## Basic setup
