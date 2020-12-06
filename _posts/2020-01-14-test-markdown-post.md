@@ -1,7 +1,7 @@
 ---
 title: An Example Markdown Post
 description: A minimal example of using markdown with fastpages.
-hide: false
+hide: true
 toc: true
 layout: post
 categories: [markdown]
