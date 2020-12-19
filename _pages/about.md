@@ -7,9 +7,9 @@ permalink: /about/
 <style type="text/css">
 .image-left {
   display: block;
-  margin-top: 25px;  
+  margin-top: 30px;  
   margin-right: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   float: left;
 }
 </style>
