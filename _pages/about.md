@@ -25,7 +25,6 @@ He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 
 ## Honors and Awards
 
-
 - 2020 NEC Labs Business Contribution Award for Smart Video Surveillance in Retail
 - $500 for SIGBED ESWEEK 2015 Student Travel Grant
 - DevDraft Top 20 finalists 2015 with perfect code correctness and advanced CS achievements
@@ -35,4 +34,5 @@ He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 - Full tuition scholarship in Computer Science at the University of Iowa
 
 [//]: # (<img align="left" src="http://2.bp.blogspot.com/-DFWgEdTYxd4/VIjfmXrq92I/AAAAAAAAZ5E/EXtdm2Od0S4/s1600/dd_badge_top10_2014.png"/>)
-<img align="center" src="../images/Achievements-Oct15.png"/>
+[//]: # (<img align="center" src="../images/Achievements-Oct15.png"/>)
+![](../images/Achievements-Oct15.png)
