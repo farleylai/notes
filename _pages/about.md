@@ -19,7 +19,7 @@ permalink: /about/
 >
 >　　　　　　　　　　　　　　　　　　　　　　　 --- FOREVER AND EVER
 
-[//]: # (<img align="left" src="https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=225"/>)
+[//]: # (<img align="left" src="https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=250"/>)
 
 [![Farley lai](https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=100)](){:.image-left }
 **Farley Lai** is a researcher in the Machine Learning department at the NEC Laboratories America.
