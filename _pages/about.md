@@ -4,12 +4,12 @@ title: Bio
 permalink: /about/
 ---
 
-<img align="right" src="https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=200"/>
-
 > WANDERING BETWEEN SIN AND DISCIPLINE,
 > WHAT I CAN DO IS MERELY TO LOOK AROUND AND LINGER ON IN VANITY FAIR.
 >
 >　　　　　　　　　　　　　　　　　　　　　　　 --- FOREVER AND EVER
+
+<img align="left" src="https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=200"/>
 
 **Farley Lai** is a researcher in the Machine Learning department at the NEC Laboratories America.
 His current research focuses on video understanding and reasoning in retail.
@@ -26,7 +26,7 @@ He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 ## Honors and Awards
 
 
-- 2020 NEC Labs Business Contribution Award for Smart Video Surveillance in the Retail Industry
+- 2020 NEC Labs Business Contribution Award for Smart Video Surveillance in Retail
 - $500 for SIGBED ESWEEK 2015 Student Travel Grant
 - DevDraft Top 20 finalists 2015 with perfect code correctness and advanced CS achievements
 - DevDraft Top 10 finalists 2014
@@ -34,5 +34,5 @@ He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 - Best Student Paper Award at CBMS 2013
 - Full tuition scholarship in Computer Science at the University of Iowa
 
-<img align="left" src="http://2.bp.blogspot.com/-DFWgEdTYxd4/VIjfmXrq92I/AAAAAAAAZ5E/EXtdm2Od0S4/s1600/dd_badge_top10_2014.png"/>
-<img align="right" src="../images/Achievements-Oct15.png"/>
+[//]: # (<img align="left" src="http://2.bp.blogspot.com/-DFWgEdTYxd4/VIjfmXrq92I/AAAAAAAAZ5E/EXtdm2Od0S4/s1600/dd_badge_top10_2014.png"/>)
+<img align="center" src="../images/Achievements-Oct15.png"/>
