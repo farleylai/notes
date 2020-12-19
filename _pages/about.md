@@ -9,7 +9,6 @@ permalink: /about/
   display: block;
   margin-left: auto;
   margin-right: 25px;
-  margin-bottom: 25px;
   float: left;
 }
 </style>
