@@ -19,8 +19,6 @@ permalink: /about/
 >
 >　　　　　　　　　　　　　　　　　　　　　　　 --- FOREVER AND EVER
 
-[//]: # (<img align="left" src="https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=250"/>)
-
 [![Farley lai](https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=125)](){:.image-left }
 **Farley Lai** is a researcher in the Machine Learning department at the NEC Laboratories America.
 His current research focuses on video understanding and reasoning in retail.
@@ -45,5 +43,4 @@ He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 - Full tuition scholarship in Computer Science at the University of Iowa
 
 [//]: # (<img align="left" src="http://2.bp.blogspot.com/-DFWgEdTYxd4/VIjfmXrq92I/AAAAAAAAZ5E/EXtdm2Od0S4/s1600/dd_badge_top10_2014.png"/>)
-[//]: # (<img align="center" src="../images/Achievements-Oct15.png"/>)
 ![](../images/Achievements-Oct15.png)
