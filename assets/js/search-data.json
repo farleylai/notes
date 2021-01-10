@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "&gt; - hide: true - toc: true - badges: true - comments: true - categories: [computer vision, object detection] .",
-            "url": "https://farley.futuresight.io/2021/01/09/detection_metrics.html",
-            "relUrl": "/2021/01/09/detection_metrics.html",
+            "title": "Object Detection Metrics and Their Use Cases",
+            "content": "",
+            "url": "https://farley.futuresight.io/computer%20vision/object%20detection/2021/01/09/detection_metrics.html",
+            "relUrl": "/computer%20vision/object%20detection/2021/01/09/detection_metrics.html",
             "date": " • Jan 9, 2021"
         }
         
