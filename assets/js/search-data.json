@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Object Detection Metrics and Their Use Cases",
-            "content": "",
+            "content": "mAP . mmAP . References . 淺析經典目標檢測評價指標--mmAP（一） 淺析經典目標檢測評價指標--mmAP（二） .",
             "url": "https://farley.futuresight.io/computer%20vision/object%20detection/2021/01/09/detection_metrics.html",
             "relUrl": "/computer%20vision/object%20detection/2021/01/09/detection_metrics.html",
             "date": " • Jan 9, 2021"
