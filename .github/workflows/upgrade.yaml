@@ -156,7 +156,7 @@ jobs:
         # read data from config files
         settings.read(settings_path)
         with open(config_path, 'r') as cfg:
-          config = yaml.load(cfg)
+          config = yaml.safe_load(cfg)
         
         # sync value for baseurl b/w config.yml and settings.ini
         settings['DEFAULT']['baseurl'] = config['baseurl']
