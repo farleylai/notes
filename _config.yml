@@ -73,8 +73,8 @@ include:
 default_badges:
   github: false
   binder: false
-  deepnote: false
   colab: true
+  deepnote: true
 
 
 # Escape HTML in post descriptions
