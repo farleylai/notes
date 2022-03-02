@@ -10,13 +10,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Implication of memory mapped storage for super large data access." />
 <meta property="og:description" content="Implication of memory mapped storage for super large data access." />
-<link rel="canonical" href="https://farley.metax.vision/blog/hpc/2022/03/02/lmdb.html" />
-<meta property="og:url" content="https://farley.metax.vision/blog/hpc/2022/03/02/lmdb.html" />
+<link rel="canonical" href="https://farley.metax.vision/blog/slurm/lmdb/leak/2022/03/02/lmdb.html" />
+<meta property="og:url" content="https://farley.metax.vision/blog/slurm/lmdb/leak/2022/03/02/lmdb.html" />
 <meta property="og:site_name" content="A Fuzzy Philosopher" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-03-02T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://farley.metax.vision/blog/hpc/2022/03/02/lmdb.html","@type":"BlogPosting","headline":"SLURM Out of Memory with LMDB","dateModified":"2022-03-02T00:00:00-06:00","datePublished":"2022-03-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://farley.metax.vision/blog/hpc/2022/03/02/lmdb.html"},"description":"Implication of memory mapped storage for super large data access.","@context":"https://schema.org"}</script>
+{"url":"https://farley.metax.vision/blog/slurm/lmdb/leak/2022/03/02/lmdb.html","@type":"BlogPosting","headline":"SLURM Out of Memory with LMDB","dateModified":"2022-03-02T00:00:00-06:00","datePublished":"2022-03-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://farley.metax.vision/blog/slurm/lmdb/leak/2022/03/02/lmdb.html"},"description":"Implication of memory mapped storage for super large data access.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://farley.metax.vision/feed.xml" title="A Fuzzy Philosopher" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,7 +87,13 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/categories/#blog">blog</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#hpc">hpc</a>
+        <a class="category-tags-link" href="/categories/#slurm">slurm</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#lmdb">lmdb</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#leak">leak</a>
         
       
       </p>
@@ -357,7 +363,7 @@ This serves as the workaround.</p>
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/blog/hpc/2022/03/02/lmdb.html" hidden></a>
+</script><a class="u-url" href="/blog/slurm/lmdb/leak/2022/03/02/lmdb.html" hidden></a>
 </article>
 
       </div>
