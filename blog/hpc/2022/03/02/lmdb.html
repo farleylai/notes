@@ -300,9 +300,44 @@ The following <code>pytest</code> snippet demonstrates the task RSS is increasin
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The root cause is the <code>LMDB</code> Python API to access database records does nt release the mapped memory on completion.
-The solution would require <code>LMDB</code> client library to update.
-Worse, the <a href="https://bit.ly/3vvTXtj">FastLoader</a> never recreates dataset iterator workers that involes the <code>LMDB</code> env and will grow RSS over epochs due to increasing MMAP access.
+<p>The root cause is the <code>LMDB</code> Python API to access database records as follows does nt release the mapped memory on completion.
+The solution would require <code>LMDB</code> client library to update.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">UCF101LMDB_2CLIP</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loading LMDB from </span><span class="si">%s</span><span class="s1">, split:</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">which_split</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">=</span> <span class="n">lmdb</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_path</span><span class="p">,</span> <span class="n">subdir</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_path</span><span class="p">),</span>
+                             <span class="n">readonly</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lock</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                             <span class="n">readahead</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">meminit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="o">...</span>
+        
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="n">vpath</span><span class="p">,</span> <span class="n">vlen</span><span class="p">,</span> <span class="n">vlabel</span><span class="p">,</span> <span class="n">vname</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">video_subset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="n">env</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span>
+        <span class="k">with</span> <span class="n">env</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">txn</span><span class="p">:</span>
+            <span class="n">raw</span> <span class="o">=</span> <span class="n">msgpack</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">txn</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_video_id</span><span class="p">[</span><span class="n">vname</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Worse, the <a href="https://bit.ly/3vvTXtj">FastLoader</a> never recreates dataset iterator workers that involes the <code>LMDB</code> env and will grow RSS over epochs due to increasing MMAP access.
 If using the vanilla <code>DataLoader</code>, make sure to set <code>persistent_workers=False</code> in case of a similar memory leak.
 Nonetheless, sufficient memory must be allocated at least for peak usage in one epoch.
 This serves as the workaround.</p>
