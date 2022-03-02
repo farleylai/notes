@@ -306,8 +306,7 @@ The following <code>pytest</code> snippet demonstrates the task RSS is increasin
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The root cause is the <code>LMDB</code> Python API to access database records as follows does nt release the mapped memory on completion.
-The solution would require <code>LMDB</code> client library to update.</p>
+<p>The root cause is the <code>LMDB</code> Python API to access database records as follows may not release the mapped memory timely on completion to reduce the runtime RSS.</p>
 
 </div>
 </div>
