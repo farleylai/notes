@@ -34,12 +34,15 @@ He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 
 ## Honors and Awards
 
+- 2022 Spot Recognition Award for $1000 to recognize successful POC demo at Haven for Hope in Texas
+- 2021 NEC Excellence Invention Award for US17/016260
 - 2020 NEC Labs Business Contribution Award for Smart Video Surveillance in Retail
-- $500 for SIGBED ESWEEK 2015 Student Travel Grant
-- DevDraft Top 20 finalists 2015 with perfect code correctness and advanced CS achievements
-- DevDraft Top 10 finalists 2014
-- NSF-funded student travel support to CPSWeek 2014 in the amount of $1500
-- Best Student Paper Award at CBMS 2013
+- 2019 Spot Recognition Award for $1500 to recognize key role in NECX/Eigen initiation
+- 2015 SIGBED ESWEEK 2015 Student Travel Grant for $500
+- 2015 DevDraft September Challenge Top 20 finalists and exclusively invited badge designer
+- 2014 DevDraft Number Challenge Top 10 finalists
+- 2014 NSF Travel Grant for $1500
+- 2013 Best Student Paper Award at CBMS
 - Full tuition scholarship in Computer Science at the University of Iowa
 
 [//]: # (<img align="left" src="http://2.bp.blogspot.com/-DFWgEdTYxd4/VIjfmXrq92I/AAAAAAAAZ5E/EXtdm2Od0S4/s1600/dd_badge_top10_2014.png"/>)
