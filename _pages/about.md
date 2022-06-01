@@ -19,7 +19,7 @@ permalink: /about/
 >
 >　　　　　　　　　　　　　　　　　　　　　　　 --- FOREVER AND EVER
 
-[![Farley lai](https://en.gravatar.com/userimage/13813144/d2988c97a0932bb18b79f953393e12e8.png?size=125)](){:.image-left }
+[![Farley lai](https://en.gravatar.com/userimage/13813144/4adbc2674497546feebd0bb12baf61aa.png?size=125)](){:.image-left }
 **Farley Lai** is a researcher in the Machine Learning department at the NEC Laboratories America.
 His current research focuses on video understanding and reasoning in retail.
 Previous research projects involves defect detection for manufacturing, visual entailment tasks for multi-modal reasoning between images and text 
