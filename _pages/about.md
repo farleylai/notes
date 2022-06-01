@@ -28,7 +28,8 @@ He received his Ph.D. under the supervision of Prof. Octav Chipara in Computer S
 High performance stream processing to model the runtime behavior and improve resource efficiency of stream applications through compile-time analysis serves as his research foundation.
 His M.S. was completed with thesis on distributed mutual exclusion and scheduling fairness at the National Central University in Taiwan.
 Before pursuing a Ph.D., he had been working in the surveillance industry and led a project of developing video management software.  
-He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
+
+He is reachable via [social networks](http://www.linkedin.com/in/farleylai).  
 An up-to-date [resume](../assets/ref/resume_farleylai.pdf) is available for reference.
 
 ## Honors and Awards
