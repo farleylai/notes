@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /02.about/
+permalink: /about/
 ---
 
 <style type="text/css">
