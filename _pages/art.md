@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Art
-permalink: /art/
+permalink: /01.art/
 ---
 
 <style type="text/css">

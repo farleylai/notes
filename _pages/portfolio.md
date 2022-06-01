@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Portfolio
-permalink: /portfolio/
+permalink: /00.portfolio/
 ---
 
 <style type="text/css">
@@ -14,3 +14,8 @@ permalink: /portfolio/
 }
 </style>
 
+## AI/ML
+
+TBD
+
+[//]: # (## Blockchain)
