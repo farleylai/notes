@@ -21,8 +21,8 @@ permalink: /about/
 
 [![Farley lai](https://en.gravatar.com/userimage/13813144/4adbc2674497546feebd0bb12baf61aa.png?size=125)](){:.image-left }
 **Farley Lai** was a researcher in the Machine Learning department at the NEC Laboratories America.
-His current research interest ranges from video understanding, reasoning, multimodal entailment to blockchains.
-Previous projects involves unsupervised defect detection for manufacturing, visual entailment tasks for multimodal reasoning between images and text 
+His current research interest ranges from video understanding, reasoning to blockchains.
+Previous projects involve unsupervised defect detection for manufacturing, visual entailment tasks for multimodal reasoning between images and text 
 as well as state of the art language grounding.
 He received his Ph.D. under the supervision of Prof. Octav Chipara in Computer Science at the University of Iowa.
 High performance stream processing to model the runtime behavior and improve resource efficiency of stream applications through compile-time analysis serves as his research foundation.
