@@ -30,7 +30,6 @@ His M.S. was completed with thesis on distributed mutual exclusion and schedulin
 Before pursuing a Ph.D., he had been working in the surveillance industry and led a project of developing video management software.  
 He is reachable via [social networks](http://www.linkedin.com/in/farleylai).
 An up-to-date [resume](../assets/ref/resume_farleylai.pdf) is available for reference.
-[//]: # (An up-to-date link:/files/resume-farleylai.pdf[resume] is available for reference.)
 
 ## Honors and Awards
 
@@ -45,5 +44,4 @@ An up-to-date [resume](../assets/ref/resume_farleylai.pdf) is available for refe
 - 2013 Best Student Paper Award at CBMS
 - Full tuition scholarship in Computer Science at the University of Iowa
 
-[//]: # (<img align="left" src="http://2.bp.blogspot.com/-DFWgEdTYxd4/VIjfmXrq92I/AAAAAAAAZ5E/EXtdm2Od0S4/s1600/dd_badge_top10_2014.png"/>)
 ![](../images/Achievements-Oct15.png)
