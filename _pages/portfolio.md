@@ -23,6 +23,18 @@ The portfolio is intended to demonstrate the highlights in selected research and
 
 ## AI/ML
 
+[![](../images/grounding.jpg)](){:.image-left }
+<u>Contextual Grounding of Natural Language Phrases in Images</u>  
+**Farley Lai**, Ning Xie, Derek Doran, Asim Kadav  
+ViGIL at NeurIPS, 2019  
+[[paper]](https://bit.ly/3NaDfG8) [[code]](https://bit.ly/3NUqijL)
+
+[![](../images/VET.jpg)](){:.image-left }
+<u>Visual Entailment: A Novel Task for Fine-grained Image Understanding</u>  
+Ning Xie, **Farley Lai**, Derek Doran, Asim Kadav  
+ViGIL at NeurIPS, 2018  
+[[paper]](https://bit.ly/3M8KxZp) [[code]](https://bit.ly/3x6FJOG)
+
 ## Mobile Sensing
 
 [![](../images/Gratis.png)](){:.image-left }
@@ -61,5 +73,5 @@ Best Student Paper Award, CBMS, 2013
 [![](../images/alternator.png)](){:.image-left }
 <u>Optimal Alternators with Reduced Space Complexity</u>  
 **Farley Lai**, Shing-Tsaan Huang  
-Master Thesis, National Central University, Taiwan  
+Master Thesis, National Central University, Taiwan, 2002  
 [[paper]](https://bit.ly/3ta4LM2)
