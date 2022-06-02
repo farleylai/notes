@@ -32,15 +32,24 @@ Under Review, 2022
 
 [![](../images/CPR.png)](){:.image-left }
 <u>Self-supervised Video Representation Learning with Cascade Positive Retrieval</u>  
+Cheng-En Wu, \underline{Farley Lai}, Yu Hen Hu, Asim Kadav  
 L3D-IVU at CVPR, 2022  
 [[paper]](https://bit.ly/3GK55X3) [[code]](https://bit.ly/3x9X2zT)  
-<br/>
+
+
+[![](../images/SplitBrain.png)](){:.image-left }
+SplitBrain: Hybrid Data and Model Parallel Deep Learning  
+**Farley Lai**, Asim Kadav, Erik Kruus  
+arXiv, 2021  
+[[report]](https://bit.ly/3xbLyM5)  
+
 
 [![](../images/Hopper.png)](){:.image-left }
 <u>Hopper: Multi-hop Transformer for Spatiotemporal Reasoning</u>  
+H. Zhou, A. Kadav, **Farley Lai**, A. Niculescu-Mizil, M. Renqiang Min, M. Kapadia, Hans Peter Graf
 ICLR, 2021  
 [[paper]](https://bit.ly/3aCSOrJ) [[code]](https://github.com/necla-ml/cater-h)  
-<br/>
+
 
 [![](../images/KeyTrack.png)](){:.image-left }
 <u>15 Keypoints Is All You Need</u>  
