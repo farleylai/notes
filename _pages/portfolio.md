@@ -9,7 +9,7 @@ permalink: /portfolio/
   display: block;
   margin-top: 5px;  
   margin-right: 15px;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 	width: 240px;
 	height: auto;
   float: left;
