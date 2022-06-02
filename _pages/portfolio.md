@@ -24,10 +24,10 @@ The portfolio is intended to demonstrate the highlights in selected research and
 ## AI/ML
 
 [![](../images/Composer.png)](){:.image-left }
-COMPOSER: Compositional Learning of Group Activity in Videos  
+[[COMPOSER: Compositional Learning of Group Activity in Videos]](https://bit.ly/3NcHKzU)  
 Honglu Zhou, Asim Kadav, Aviv Shamsian, Shijie Geng, **Farley Lai**,  
 Long Zhao, Ting Liu, Mubbasir Kapadia, Hans Peter Graf   
-[[Under Review]](https://bit.ly/3NcHKzU), 2022  
+Under Review, 2022  
 
 
 [![](../images/CPR.png)](){:.image-left }
@@ -47,7 +47,7 @@ ICLR, 2021
 Michael Snower, Asim Kadav, **Farley Lai**, Hans Peter Graf  
 CVPR, 2020  
 [[paper]](https://bit.ly/3zehNvM)  
-
+<br/>
 
 [![](../images/grounding.png)](){:.image-left }
 <u>Contextual Grounding of Natural Language Phrases in Images</u>  
