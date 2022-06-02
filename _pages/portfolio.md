@@ -9,7 +9,7 @@ permalink: /portfolio/
   display: block;
   margin-top: 5px;  
   margin-right: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 	width: 240px;
 	height: auto;
   float: left;
@@ -34,7 +34,7 @@ IoTDI, 2018
 [![](../images/SPO_MSA.png)](){:.image-left }
 <u>Stream Processing Optimizations for Mobile Sensing Applications</u>  
 **Farley Lai**, Octav Chipara  
-Ph.D. Dissertation in Computer Scienece, University of Iowa, 2017  
+Ph.D. Dissertation in CS, University of Iowa, 2017  
 [[paper]](https://bit.ly/3tauR1h)
 
 [![](../images/ESMS.png)](){:.image-left }
