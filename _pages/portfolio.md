@@ -41,7 +41,7 @@ L3D-IVU at CVPR, 2022
 SplitBrain: Hybrid Data and Model Parallel Deep Learning  
 **Farley Lai**, Asim Kadav, Erik Kruus  
 arXiv, 2021  
-[[report]](https://bit.ly/3xbLyM5)  
+[[report]](https://bit.ly/3NggDnp)  
 <br/>
 <br/>
 <br/>
@@ -122,7 +122,7 @@ IPSN, 2014
 Syed Shabih Hasan, **Farley Lai**, Octav Chipara, Yi-Hsien Wu  
 Best Student Paper Award, CBMS, 2013  
 [[paper]](https://bit.ly/3Nbw7JD)  
-
+<br/>
 
 ## Distributed Computing
 
@@ -131,7 +131,6 @@ Best Student Paper Award, CBMS, 2013
 **Farley Lai**, Shing-Tsaan Huang  
 Master Thesis in CS, National Central University, Taiwan, 2002  
 [[paper]](https://bit.ly/3ta4LM2)  
-<br/>
 <br/>
 
 
