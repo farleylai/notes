@@ -24,20 +24,20 @@ The portfolio is intended to demonstrate the highlights in selected research and
 ## AI/ML
 
 [![](../images/Composer.png)](){:.image-left }
-[[COMPOSER: Compositional Learning of Group Activity in Videos]](https://bit.ly/3NcHKzU)  
+[<u>COMPOSER: Compositional Learning of Group Activity in Videos</u>](https://bit.ly/3NcHKzU)  
 Honglu Zhou, Asim Kadav, Aviv Shamsian, Shijie Geng, **Farley Lai**,  
 Long Zhao, Ting Liu, Mubbasir Kapadia, Hans Peter Graf   
 Under Review, 2022  
 
 
 [![](../images/CPR.png)](){:.image-left }
-Self-supervised Video Representation Learning with Cascade Positive Retrieval  
+<u>Self-supervised Video Representation Learning with Cascade Positive Retrieval</u>  
 L3D-IVU at CVPR, 2022  
 [[paper]](https://bit.ly/3GK55X3) [[code]](https://bit.ly/3x9X2zT)  
 <br/>
 
 [![](../images/Hopper.png)](){:.image-left }
-Hopper: Multi-hop Transformer for Spatiotemporal Reasoning  
+<u>Hopper: Multi-hop Transformer for Spatiotemporal Reasoning</u>  
 ICLR, 2021  
 [[paper]](https://bit.ly/3aCSOrJ) [[code]](https://github.com/necla-ml/cater-h)  
 <br/>
