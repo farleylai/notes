@@ -23,7 +23,7 @@ The portfolio is intended to demonstrate the highlights in selected research and
 
 ## AI/ML
 
-[![](../images/grounding.jpg)](){:.image-left }
+[![](../images/grounding.png)](){:.image-left }
 <u>Contextual Grounding of Natural Language Phrases in Images</u>  
 **Farley Lai**, Ning Xie, Derek Doran, Asim Kadav  
 ViGIL at NeurIPS, 2019  
@@ -38,7 +38,7 @@ ViGIL at NeurIPS, 2018
 ## Mobile Sensing
 
 [![](../images/Gratis.png)](){:.image-left }
-<u><font size=14>Workload Shaping Energy Optimizations with Predictable Performance for Mobile Sensing</font></u>  
+<u><font size=14px>Workload Shaping Energy Optimizations with Predictable Performance for Mobile Sensing</font></u>  
 **Farley Lai**, Marjan Radi, Octav Chipara, William G. Griswold  
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)
