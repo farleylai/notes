@@ -44,6 +44,13 @@ arXiv, 2021
 [[report]](https://bit.ly/3xbLyM5)  
 
 
+[![](../images/KetNet.png)](){:.image-left }
+Learning Higher-order Object Interactions for Keypoint-based Video Understanding  
+Yi Huang, Asim Kadav, **Farley Lai**, Deep Patel, Hans Peter Graf  
+SRVU at ICCV, 2021  
+[[paper]](https://bit.ly/3NcLgKI)  
+
+
 [![](../images/Hopper.png)](){:.image-left }
 <u>Hopper: Multi-hop Transformer for Spatiotemporal Reasoning</u>  
 H. Zhou, A. Kadav, **Farley Lai**, A. Niculescu-Mizil, M. Renqiang Min, M. Kapadia, Hans Peter Graf
@@ -117,3 +124,29 @@ Best Student Paper Award, CBMS, 2013
 **Farley Lai**, Shing-Tsaan Huang  
 Master Thesis in CS, National Central University, Taiwan, 2002  
 [[paper]](https://bit.ly/3ta4LM2)  
+
+
+## Patents
+
+4 US patents issued and 12 in application as of 2022.
+
+<u>Learning Representations of Generalized Cross-modal Entailment Tasks</u>
+**Farley Lai**, Asim Kadav, Ning Xie  
+[US11250299](https://bit.ly/39603Yz), 2022
+
+
+<u>False Alarm Reduction System for Automatic Manufacturing Quality Control</u>  
+Alexandru Niculescu-Mizil, Renqiang Min, Eric Cosatto, **Farley Lai**, Hans Peter Graf, Xavier Fontaine  
+[US11087452](https://bit.ly/3zcCesQ), 2021
+
+
+<u>Unsupervised Neighbor-preserving Embedding for Image Stream Visualization and Anomaly Detection</u>  
+Renqiang Min, **Farley Lai**, Eric Cosatto, Hans Peter Graf  
+[US10885627](https://bit.ly/3xeeVh6), 2021
+
+
+<u>Unsupervised image-based anomaly detection using multi-scale context-dependent deep autoencoding gaussian mixture model</u>  
+Alexandru Niculescu-MizilRenqiang MinEric Cosatto, **Farley Lai**, Hans Peter GrafXavier Fontaine  
+[US10853937](https://bit.ly/3GGEB97), 2020  
+
+
