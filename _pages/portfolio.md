@@ -150,6 +150,6 @@ Renqiang Min, **Farley Lai**, Eric Cosatto, Hans Peter Graf
 [US10885627](https://bit.ly/3xeeVh6), 2021
 
 
-<u>Unsupervised Image-based Anomaly Detection Using Multi-scale Context-dependent Deep Autoencoding Gaussian Mixture Model</u>  
+<u style='font-size: 14px'>Unsupervised Image-based Anomaly Detection Using Multi-scale Context-dependent Deep Autoencoding Gaussian Mixture Model</u>  
 Alexandru Niculescu-Mizil, Renqiang Min, Eric Cosatto, **Farley Lai**, Hans Peter GrafXavier Fontaine  
 [US10853937](https://bit.ly/3GGEB97), 2020
