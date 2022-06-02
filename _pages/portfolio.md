@@ -28,7 +28,7 @@ The portfolio is intended to demonstrate the highlights in selected research and
 **Farley Lai**, Ning Xie, Derek Doran, Asim Kadav  
 ViGIL at NeurIPS, 2019  
 [[paper]](https://bit.ly/3NaDfG8) [[code]](https://bit.ly/3NUqijL)  
-
+  
 
 [![](../images/VET.jpg)](){:.image-left }
 <u>Visual Entailment: A Novel Task for Fine-grained Image Understanding</u>  
@@ -44,7 +44,7 @@ ViGIL at NeurIPS, 2018
 **Farley Lai**, Marjan Radi, Octav Chipara, William G. Griswold  
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)  
-
+  
 
 [![](../images/SPO_MSA.png)](){:.image-left }
 <u>Stream Processing Optimizations for Mobile Sensing Applications</u>  
