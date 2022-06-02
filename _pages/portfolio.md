@@ -16,7 +16,7 @@ permalink: /portfolio/
 }
 </style>
 
-Up to date publications and patents issued or not can be found on [Google Scholar](https://bit.ly/3taq2VT).
+Up to date publications and patents issued or in application be found on [Google Scholar](https://bit.ly/3taq2VT).
 The portfolio is intended to demonstrate the highlights in selected research and development projects.
 
 [//]: # (## Blockchain)
