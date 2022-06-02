@@ -9,7 +9,7 @@ permalink: /portfolio/
   display: block;
   margin-top: 5px;  
   margin-right: 15px;
-  margin-bottom: 0px;
+  margin-bottom: -5px;
 	width: 240px;
 	height: auto;
   float: left;
@@ -38,7 +38,7 @@ ViGIL at NeurIPS, 2018
 ## Mobile Sensing
 
 [![](../images/Gratis.png)](){:.image-left }
-<u>Workload Shaping Energy Optimizations with Predictable Performance for Mobile Sensing</u>  
+<u><font size=14>Workload Shaping Energy Optimizations with Predictable Performance for Mobile Sensing</font></u>  
 **Farley Lai**, Marjan Radi, Octav Chipara, William G. Griswold  
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)
