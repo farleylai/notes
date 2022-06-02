@@ -45,6 +45,7 @@ ViGIL at NeurIPS, 2018
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)  
 <br/>
+<br/>
 
 [![](../images/SPO_MSA.png)](){:.image-left }
 <u>Stream Processing Optimizations for Mobile Sensing Applications</u>  
