@@ -2,7 +2,10 @@
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
 @import "minima/fastpages-styles";   
 
-
+.post-content p, .post-content li {
+   font-size: 16px;
+   color: #515151;
+}
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/

@@ -14,9 +14,6 @@ permalink: /portfolio/
 	height: auto;
   float: left;
 }
-body{
-  font-size: 12pt;
-}
 </style>
 
 Up to date publications and patents issued or not can be found on [Google Scholar](https://bit.ly/3taq2VT).
@@ -62,7 +59,7 @@ Best Student Paper Award, CBMS, 2013
 [![](../images/alternator.png)](){:.image-left }
 Optimal Alternators with Reduced Space Complexity  
 **Farley Lai**, Shing-Tsaan Huang  
-Master Thesis, National Central University, Taiwan
+Master Thesis, National Central University, Taiwan  
 [[paper]](https://bit.ly/3ta4LM2)
 
 
