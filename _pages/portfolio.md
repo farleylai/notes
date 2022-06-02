@@ -47,11 +47,12 @@ arXiv, 2021
 <br/>
 
 
-[![](../images/KetNet.png)](){:.image-left }
+[![](../images/KeyNet.png)](){:.image-left }
 Learning Higher-order Object Interactions for Keypoint-based Video Understanding  
 Yi Huang, Asim Kadav, **Farley Lai**, Deep Patel, Hans Peter Graf  
 SRVU at ICCV, 2021  
 [[paper]](https://bit.ly/3NcLgKI)  
+<br/>
 
 
 [![](../images/Hopper.png)](){:.image-left }
@@ -68,12 +69,14 @@ CVPR, 2020
 [[paper]](https://bit.ly/3zehNvM)  
 <br/>
 
+
 [![](../images/grounding.png)](){:.image-left }
 <u>Contextual Grounding of Natural Language Phrases in Images</u>  
 **Farley Lai**, Ning Xie, Derek Doran, Asim Kadav  
 ViGIL at NeurIPS, 2019  
 [[paper]](https://bit.ly/3NaDfG8) [[code]](https://bit.ly/3NUqijL)  
 <br/>
+
 
 [![](../images/VET.jpg)](){:.image-left }
 <u>Visual Entailment: A Novel Task for Fine-grained Image Understanding</u>  
