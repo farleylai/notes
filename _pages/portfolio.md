@@ -27,8 +27,7 @@ The portfolio is intended to demonstrate the highlights in selected research and
 COMPOSER: Compositional Learning of Group Activity in Videos  
 Honglu Zhou, Asim Kadav, Aviv Shamsian, Shijie Geng, **Farley Lai**,  
 Long Zhao, Ting Liu, Mubbasir Kapadia, Hans Peter Graf   
-Under Review, 2022  
-[[paper]](https://bit.ly/3NcHKzU)  
+[[Under Review]](https://bit.ly/3NcHKzU), 2022  
 
 
 [![](../images/CPR.png)](){:.image-left }
@@ -41,14 +40,14 @@ L3D-IVU at CVPR, 2022
 Hopper: Multi-hop Transformer for Spatiotemporal Reasoning  
 ICLR, 2021  
 [[paper]](https://bit.ly/3aCSOrJ) [[code]](https://github.com/necla-ml/cater-h)  
-
+<br/>
 
 [![](../images/KeyTrack.png)](){:.image-left }
 <u>15 Keypoints Is All You Need</u>  
 Michael Snower, Asim Kadav, **Farley Lai**, Hans Peter Graf  
 CVPR, 2020  
 [[paper]](https://bit.ly/3zehNvM)  
-<br/>
+
 
 [![](../images/grounding.png)](){:.image-left }
 <u>Contextual Grounding of Natural Language Phrases in Images</u>  
