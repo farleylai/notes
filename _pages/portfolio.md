@@ -30,6 +30,7 @@ ViGIL at NeurIPS, 2019
 [[paper]](https://bit.ly/3NaDfG8) [[code]](https://bit.ly/3NUqijL)
 
 
+
 [![](../images/VET.jpg)](){:.image-left }
 <u>Visual Entailment: A Novel Task for Fine-grained Image Understanding</u>  
 Ning Xie, **Farley Lai**, Derek Doran, Asim Kadav  
@@ -44,6 +45,7 @@ ViGIL at NeurIPS, 2018
 **Farley Lai**, Marjan Radi, Octav Chipara, William G. Griswold  
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)
+
 
 
 [![](../images/SPO_MSA.png)](){:.image-left }
