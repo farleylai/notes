@@ -42,6 +42,9 @@ SplitBrain: Hybrid Data and Model Parallel Deep Learning
 **Farley Lai**, Asim Kadav, Erik Kruus  
 arXiv, 2021  
 [[report]](https://bit.ly/3xbLyM5)  
+<br/>
+<br/>
+<br/>
 
 
 [![](../images/KetNet.png)](){:.image-left }
@@ -124,13 +127,15 @@ Best Student Paper Award, CBMS, 2013
 **Farley Lai**, Shing-Tsaan Huang  
 Master Thesis in CS, National Central University, Taiwan, 2002  
 [[paper]](https://bit.ly/3ta4LM2)  
+<br/>
+<br/>
 
 
 ## Patents
 
 4 US patents issued and 12 in application as of 2022.
 
-<u>Learning Representations of Generalized Cross-modal Entailment Tasks</u>
+<u>Learning Representations of Generalized Cross-modal Entailment Tasks</u>  
 **Farley Lai**, Asim Kadav, Ning Xie  
 [US11250299](https://bit.ly/39603Yz), 2022
 
@@ -145,8 +150,6 @@ Renqiang Min, **Farley Lai**, Eric Cosatto, Hans Peter Graf
 [US10885627](https://bit.ly/3xeeVh6), 2021
 
 
-<u>Unsupervised image-based anomaly detection using multi-scale context-dependent deep autoencoding gaussian mixture model</u>  
-Alexandru Niculescu-MizilRenqiang MinEric Cosatto, **Farley Lai**, Hans Peter GrafXavier Fontaine  
-[US10853937](https://bit.ly/3GGEB97), 2020  
-
-
+<u>Unsupervised Image-based Anomaly Detection Using Multi-scale Context-dependent Deep Autoencoding Gaussian Mixture Model</u>  
+Alexandru Niculescu-Mizil, Renqiang Min, Eric Cosatto, **Farley Lai**, Hans Peter GrafXavier Fontaine  
+[US10853937](https://bit.ly/3GGEB97), 2020
