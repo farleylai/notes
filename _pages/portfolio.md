@@ -25,8 +25,10 @@ The portfolio is intended to demonstrate the highlights in selected research and
 ## Distributed Computing
 
 [![](../images/alternator.png)](){:.image-left }
-Optimal Alternators with Reduced Space Complexity
-**Farley Lai**, Shing-Tsaan Huang
+Optimal Alternators with Reduced Space Complexity  
+**Farley Lai**, Shing-Tsaan Huang  
 [[paper]](https://bit.ly/3ta4LM2)
+
+
 
 [//]: # (## Blockchain)
