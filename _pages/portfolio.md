@@ -14,6 +14,8 @@ permalink: /portfolio/
 }
 </style>
 
+Up to date publications can be found on [Google Scholar](https://bit.ly/3taq2VT).
+
 ## AI/ML
 
 TBD
