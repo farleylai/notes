@@ -23,6 +23,32 @@ The portfolio is intended to demonstrate the highlights in selected research and
 
 ## AI/ML
 
+[![](../images/Composer.png)](){:.image-left }
+COMPOSER: Compositional Learning of Group Activity in Videos  
+Honglu Zhou, Asim Kadav, Aviv Shamsian, Shijie Geng, **Farley Lai**,  
+Long Zhao, Ting Liu, Mubbasir Kapadia, Hans Peter Graf   
+Under Review, 2022 
+[[paper]](https://bit.ly/3NcHKzU)  
+
+[![](../images/CPR.png)](){:.image-left }
+Self-supervised Video Representation Learning with Cascade Positive Retrieval  
+L3D-IVU at CVPR, 2022  
+[[paper]](https://bit.ly/3GK55X3) [[code]](https://bit.ly/3x9X2zT)  
+
+
+[![](../images/Hopper.png)](){:.image-left }
+Hopper: Multi-hop Transformer for Spatiotemporal Reasoning  
+ICLR, 2021  
+[[paper]](https://bit.ly/3aCSOrJ) [[code]](https://github.com/necla-ml/cater-h)  
+
+
+[![](../images/KeyTrack.png)](){:.image-left }
+<u>15 Keypoints Is All You Need</u>  
+Michael Snower, Asim Kadav, **Farley Lai**, Hans Peter Graf  
+CVPR, 2020  
+[[paper]](https://bit.ly/3zehNvM)  
+
+
 [![](../images/grounding.png)](){:.image-left }
 <u>Contextual Grounding of Natural Language Phrases in Images</u>  
 **Farley Lai**, Ning Xie, Derek Doran, Asim Kadav  
