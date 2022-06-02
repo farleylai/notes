@@ -29,11 +29,13 @@ The portfolio is intended to demonstrate the highlights in selected research and
 ViGIL at NeurIPS, 2019  
 [[paper]](https://bit.ly/3NaDfG8) [[code]](https://bit.ly/3NUqijL)
 
+
 [![](../images/VET.jpg)](){:.image-left }
 <u>Visual Entailment: A Novel Task for Fine-grained Image Understanding</u>  
 Ning Xie, **Farley Lai**, Derek Doran, Asim Kadav  
 ViGIL at NeurIPS, 2018  
 [[paper]](https://bit.ly/3M8KxZp) [[code]](https://bit.ly/3x6FJOG)
+
 
 ## Mobile Sensing
 
@@ -43,17 +45,20 @@ ViGIL at NeurIPS, 2018
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)
 
+
 [![](../images/SPO_MSA.png)](){:.image-left }
 <u>Stream Processing Optimizations for Mobile Sensing Applications</u>  
 **Farley Lai**, Octav Chipara  
 Ph.D. Dissertation in CS, University of Iowa, 2017  
 [[paper]](https://bit.ly/3tauR1h)
 
+
 [![](../images/ESMS.png)](){:.image-left }
 <u>Static Memory Management for Efficient Mobile Sensing Applications</u>  
 **Farley Lai**, Daniel Schmidt, Octav Chipara  
 EMSOFT, 2015  
 [[paper]](https://bit.ly/3m8PuHo)
+
 
 [![](../images/CSense.png)](){:.image-left }
 <u>CSense: A Stream-Processing Toolkit for High-Rate Mobile Sensing Applications</u>  
@@ -68,10 +73,11 @@ Syed Shabih Hasan, **Farley Lai**, Octav Chipara, Yi-Hsien Wu
 Best Student Paper Award, CBMS, 2013  
 [[paper]](https://bit.ly/3Nbw7JD)
 
+
 ## Distributed Computing
 
 [![](../images/alternator.png)](){:.image-left }
 <u>Optimal Alternators with Reduced Space Complexity</u>  
 **Farley Lai**, Shing-Tsaan Huang  
-Master Thesis, National Central University, Taiwan, 2002  
+Master Thesis in CS, National Central University, Taiwan, 2002  
 [[paper]](https://bit.ly/3ta4LM2)
