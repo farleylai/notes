@@ -7,10 +7,10 @@ permalink: /portfolio/
 <style type="text/css">
 .image-left {
   display: block;
-  margin-top: 5px;  
+  margin-top: 15px;  
   margin-right: 15px;
-  margin-bottom: 0px;
-	width: 250px;
+  margin-bottom: 5px;
+	width: 240px;
 	height: auto;
   float: left;
 }
@@ -24,20 +24,20 @@ The portfolio is intended to demonstrate the highlights in selected research and
 ## Mobile Sensing
 
 [![](../images/Gratis.png)](){:.image-left }
-Workload Shaping Energy Optimizations with Predictable Performance for Mobile Sensing  
-**Farley Lai**, Marjan Radi, Octav Chipara, William G. Griswold  
+**Workload Shaping Energy Optimizations with Predictable Performance for Mobile Sensing**  
+<u>Farley Lai</u>, Marjan Radi, Octav Chipara, William G. Griswold  
 IoTDI, 2018  
 [[paper]](https://bit.ly/3aCODft)
 
 [![](../images/SPO_MSA.png)](){:.image-left }
-Stream Processing Optimizations for Mobile Sensing Applications  
-**Farley Lai**, Octav Chipara  
+**Stream Processing Optimizations for Mobile Sensing Applications**  
+<u>Farley Lai</u>, Octav Chipara  
 Ph.D. Dissertation in Computer Scienece, University of Iowa, 2017  
 [[paper]](https://bit.ly/3tauR1h)
 
 [![](../images/ESMS.png)](){:.image-left }
-Static Memory Management for Efficient Mobile Sensing Applications  
-**Farley Lai**, Daniel Schmidt, Octav Chipara  
+**Static Memory Management for Efficient Mobile Sensing Applications**  
+<u>Farley Lai</u>, Daniel Schmidt, Octav Chipara  
 EMSOFT, 2015  
 [[paper]](https://bit.ly/3m8PuHo)
 
