@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Art
-permalink: /art/
+title: Creative
+permalink: /creative/
 ---
 
 <style type="text/css">
