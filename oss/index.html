@@ -83,34 +83,136 @@ window.onload = wrap_img;
 }
 </style>
 
-<p>In the past few years of working at NEC Labs, I have managed to release several OSS repos on GitHub for ease of the deployment of our retail video surveillance POC.
-Here is a list of relevant repos to go through.
+<p>In the past few years of working at NEC Labs, I have managed to release several OSS pacakges on GitHub for ease of the deployment of a retail video surveillance POC.
+The design and organization follow the Dependency Inversion Principle (DIP) instead of direct dependencies on a particular deep learning framework such as <code class="language-plaintext highlighter-rouge">PyTorch</code>.
+A target ML application is supposed to invoke the APIs provided by the packages.
+While the best documentation is the code per se, several feature highlights are worth going through.
 Hopefully, one may find them useful for production ML applications.</p>
 
 <h2 id="ml"><a href="https://github.com/necla-ml/ML">ML</a></h2>
 
-<p>Feature highlights:</p>
-<ul>
-  <li>Flexible Configurations</li>
-  <li>HDF5 Compression</li>
-  <li>GPU Visibility</li>
-  <li>Daemon Mode</li>
-  <li>Distributed Training and Execution</li>
-  <li>TensorRT Deployment</li>
-  <li>Checkpoints from AWS/S3 and Google Drive</li>
-</ul>
+<p>So far, the only backend is <code class="language-plaintext highlighter-rouge">PyTorch</code> and <code class="language-plaintext highlighter-rouge">ML</code> essentially mimics the APIs.
+Nonetheless, it is possible to replace with other alternatives such as <code class="language-plaintext highlighter-rouge">TensorFlow</code>.
+This is in case that the lastest release of <code class="language-plaintext highlighter-rouge">PyTorch</code> comes with incompatibility or even bugs.
+In that regard, it allows <code class="language-plaintext highlighter-rouge">ML</code> to quickly work around those potential issues before the official fix such taht the target ML application remains intact.</p>
+
+<!-- Feature highlights:
+- Flexible Configurations
+- HDF5 Compression
+- GPU Visibility
+- Daemon Mode
+- Distributed Training and Execution
+- TensorRT Deployment
+- Checkpoints from AWS/S3 and Google Drive -->
 
 <h3 id="flexible-configurations">Flexible Configurations</h3>
 
-<p>The configuration APIs are based on YAML with several enhancements:</p>
+<p>The configuration APIs follows the YAML format with several enhancements:</p>
+
 <ul>
   <li>Accept scientific notation without decimal point in case of YAML 1.1</li>
-  <li>Support YAML imports for ease of hierarchical configuration management
+  <li>Support a custom YAML constructor <code class="language-plaintext highlighter-rouge">!include</code> for ease of hierarchical configuration management
     <ul>
       <li>The imported YAML config is allowed to update its parent YAML config nodes</li>
     </ul>
   </li>
 </ul>
+
+<p>Here is a sample <code class="language-plaintext highlighter-rouge">app</code> project with configuration files under <code class="language-plaintext highlighter-rouge">configs/</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|____app
+| |____configs
+| | |____defaults.yml
+| | |____sites
+| | | |____site2.yml
+| | | |____site1.yml
+| | |____app.yml
+| |____src
+| | |____program.py
+</code></pre></div></div>
+
+<p>A minimal sample <code class="language-plaintext highlighter-rouge">program.py</code> is as follows to wrap its <code class="language-plaintext highlighter-rouge">main(...)</code> with the <code class="language-plaintext highlighter-rouge">ML</code> app launchar:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">cfg</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">f"Running main() with cfg=</span><span class="si">{</span><span class="n">cfg</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">ml</span> <span class="kn">import</span> <span class="n">app</span>
+    <span class="kn">from</span> <span class="nn">ml.argparse</span> <span class="kn">import</span> <span class="n">ArgumentParser</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">ArgumentParser</span><span class="p">()</span>
+    <span class="n">cfg</span> <span class="o">=</span> <span class="n">parser</span><span class="p">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">,</span> <span class="n">cfg</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Sample configuration files are placed under <code class="language-plaintext highlighter-rouge">configs/</code>.
+The top level one is <code class="language-plaintext highlighter-rouge">configs/app.yml</code> for the program to invoke with option <code class="language-plaintext highlighter-rouge">--cfg</code>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$&gt;</span> ./program.py <span class="nt">--cfg</span> configs/app.yml
+</code></pre></div></div>
+
+<p>Looking into <code class="language-plaintext highlighter-rouge">configs/app.yml</code> below, a custom <code class="language-plaintext highlighter-rouge">!include</code> constructor is supported to include a specific configuration file that updates its parent configurations.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">import</span><span class="pi">:</span>
+  <span class="na">defaults</span><span class="pi">:</span> 
+    <span class="na">app_site</span><span class="pi">:</span> <span class="kt">!include</span> <span class="s">defaults.yml</span>
+  <span class="na">app_site</span><span class="pi">:</span> <span class="kt">!include</span> <span class="s">sites/site1.yml</span>
+
+<span class="na">app_platform</span><span class="pi">:</span> <span class="s">Apple M1</span>
+<span class="na">app_OS</span><span class="pi">:</span> <span class="s">MacOSX</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">configs/defaults.yml</code> serves as the default site config as follows:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">name</span><span class="pi">:</span> <span class="s">Little Planet Branch</span>
+  <span class="na">location</span><span class="pi">:</span> <span class="s">St. Louis, MO</span>
+  <span class="na">template</span><span class="pi">:</span> <span class="s">XXX</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">configs/sites/site1.yml</code> is the configuration for a specific site that may overwrite the defualts:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">name</span><span class="pi">:</span> <span class="s">site1</span>
+  <span class="na">location</span><span class="pi">:</span> <span class="s">Santa Clara, CA</span>
+  <span class="na">note</span><span class="pi">:</span> <span class="s">Welcome to CA</span>
+</code></pre></div></div>
+
+<p>Since <code class="language-plaintext highlighter-rouge">app.yml</code> includes <code class="language-plaintext highlighter-rouge">site1.yml</code>, <code class="language-plaintext highlighter-rouge">site1.yml</code> will update the configuration in <code class="language-plaintext highlighter-rouge">defaults.yml</code> as updating a <code class="language-plaintext highlighter-rouge">Python</code> dictionary.
+Therefore, the resulting configuration is as follows:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running main<span class="o">()</span> with <span class="nv">cfg</span><span class="o">={</span>   <span class="s1">'__file__'</span>: PosixPath<span class="o">(</span><span class="s1">'configs/app.yml'</span><span class="o">)</span>,
+    <span class="s1">'app_OS'</span>: <span class="s1">'MacOSX'</span>,
+    <span class="s1">'app_platform'</span>: <span class="s1">'Apple M1'</span>,
+    <span class="s1">'app_site'</span>: <span class="o">{</span>   <span class="s1">'location'</span>: <span class="s1">'Santa Clara, CA'</span>,
+                    <span class="s1">'name'</span>: <span class="s1">'site1'</span>,
+                    <span class="s1">'note'</span>: <span class="s1">'Welcome to CA'</span>,
+                    <span class="s1">'template'</span>: <span class="s1">'XXX'</span><span class="o">}</span>,
+    <span class="s1">'daemon'</span>: False,
+    <span class="s1">'deterministic'</span>: False,
+    <span class="s1">'dist'</span>: None,
+    <span class="s1">'dist_backend'</span>: <span class="s1">'nccl'</span>,
+    <span class="s1">'dist_no_sync_bn'</span>: False,
+    <span class="s1">'dist_port'</span>: 25900,
+    <span class="s1">'dist_url'</span>: <span class="s1">'env://'</span>,
+    <span class="s1">'gpu'</span>: <span class="o">[]</span>,
+    <span class="s1">'logfile'</span>: None,
+    <span class="s1">'logging'</span>: False,
+    <span class="s1">'no_gpu'</span>: False,
+    <span class="s1">'rank'</span>: <span class="nt">-1</span>,
+    <span class="s1">'seed'</span>: 1204,
+    <span class="s1">'slurm_constraint'</span>: None,
+    <span class="s1">'slurm_cpus_per_task'</span>: 4,
+    <span class="s1">'slurm_export'</span>: <span class="s1">''</span>,
+    <span class="s1">'slurm_mem'</span>: <span class="s1">'32G'</span>,
+    <span class="s1">'slurm_nodelist'</span>: None,
+    <span class="s1">'slurm_nodes'</span>: 1,
+    <span class="s1">'slurm_ntasks_per_node'</span>: 1,
+    <span class="s1">'slurm_partition'</span>: <span class="s1">'gpu'</span>,
+    <span class="s1">'slurm_time'</span>: <span class="s1">'0'</span>,
+    <span class="s1">'world_size'</span>: <span class="nt">-1</span><span class="o">}</span>
+</code></pre></div></div>
+
+<p>Other key-value settings are specified by <code class="language-plaintext highlighter-rouge">ML</code> for other features.
+Note only keys <code class="language-plaintext highlighter-rouge">name</code> and <code class="language-plaintext highlighter-rouge">location</code> are replced while <code class="language-plaintext highlighter-rouge">template</code> remains as is.
+The semantics for additional keys such as <code class="language-plaintext highlighter-rouge">note</code> is to merged with the parent configuration.</p>
 
 <h3 id="hdf5-compression">HDF5 Compression</h3>
 
