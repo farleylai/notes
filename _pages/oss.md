@@ -111,6 +111,7 @@ Since `app.yml` includes `site1.yml`, `site1.yml` will update the configuration 
 Therefore, the resulting configuration is as follows:
 
 ```sh
+%> src/program.py --cfg configs/app.yml
 Running main() with cfg={   '__file__': PosixPath('configs/app.yml'),
     'app_OS': 'MacOSX',
     'app_platform': 'Apple M1',
@@ -143,9 +144,23 @@ Running main() with cfg={   '__file__': PosixPath('configs/app.yml'),
     'world_size': -1}
 ```
 
-Other key-value settings are specified by `ML` for other features.
 Note only keys `name` and `location` are replced while `template` remains as is.
 The semantics for additional keys such as `note` is to merged with the parent configuration.
+Other key-value settings are specified by `ml.argparse` as default command line options for other features.
+Rather than adding too many command line options, one or more key-value settings in the configuration can be overwritten in the same syntax `key=value` following `--cfg /path/to/config.yml` in the command line.
+For example, to replace the value of `app_site.location` with `San Jose, CA`, the following command line suffices:
+
+```sh
+%> src/program.py --cfg configs/app.yml app_site.location='San Jose, CA'
+Running main() with cfg={   '__file__': PosixPath('configs/app.yml'),
+    'app_OS': 'MacOSX',
+    'app_platform': 'Apple M1',
+    'app_site': {   'location': 'San Jose, CA',
+                    'name': 'site1',
+                    'note': 'Welcome to CA',
+                    'template': 'XXX'},
+    ...
+```
 
 ### HDF5 Compression
 
@@ -190,6 +205,7 @@ TBD
 ## [ML-WS](https://github.com/necla-ml/ML-WS)
 
 TBD
+
 ## [feedstocks](https://github.com/necla-ml/feedstocks)
 
 TBD
