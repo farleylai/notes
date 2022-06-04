@@ -14,27 +14,138 @@ permalink: /oss/
 }
 </style>
 
-In the past few years of working at NEC Labs, I have managed to release several OSS repos on GitHub for ease of the deployment of our retail video surveillance POC.
-Here is a list of relevant repos to go through.
+In the past few years of working at NEC Labs, I have managed to release several OSS pacakges on GitHub for ease of the deployment of a retail video surveillance POC.
+The design and organization follow the Dependency Inversion Principle (DIP) instead of direct dependencies on a particular deep learning framework such as `PyTorch`.
+A target ML application is supposed to invoke the APIs provided by the packages.
+While the best documentation is the code per se, several feature highlights are worth going through.
 Hopefully, one may find them useful for production ML applications.
 
 ## [ML](https://github.com/necla-ml/ML)
 
-Feature highlights:
+So far, the only backend is `PyTorch` and `ML` essentially mimics the APIs.
+Nonetheless, it is possible to replace with other alternatives such as `TensorFlow`.
+This is in case that the lastest release of `PyTorch` comes with incompatibility or even bugs.
+In that regard, it allows `ML` to quickly work around those potential issues before the official fix such taht the target ML application remains intact.
+
+<!-- Feature highlights:
 - Flexible Configurations
 - HDF5 Compression
 - GPU Visibility
 - Daemon Mode
 - Distributed Training and Execution
 - TensorRT Deployment
-- Checkpoints from AWS/S3 and Google Drive
+- Checkpoints from AWS/S3 and Google Drive -->
 
 ### Flexible Configurations
 
-The configuration APIs are based on YAML with several enhancements:
+The configuration APIs follows the YAML format with several enhancements:
+
 - Accept scientific notation without decimal point in case of YAML 1.1
-- Support YAML imports for ease of hierarchical configuration management
-	- The imported YAML config is allowed to update its parent YAML config nodes 
+- Support a custom YAML constructor `!include` for ease of hierarchical configuration management
+  - The imported YAML config is allowed to update its parent YAML config nodes
+
+Here is a sample `app` project with configuration files under `configs/`:
+```
+|____app
+| |____configs
+| | |____defaults.yml
+| | |____sites
+| | | |____site2.yml
+| | | |____site1.yml
+| | |____app.yml
+| |____src
+| | |____program.py
+```
+
+A minimal sample `program.py` is as follows to wrap its `main(...)` with the `ML` app launchar:
+```py
+#!/usr/bin/env python
+
+def main(cfg):
+    print(f"Running main() with cfg={cfg}")
+
+if __name__ == '__main__':
+    from ml import app
+    from ml.argparse import ArgumentParser
+    parser = ArgumentParser()
+    cfg = parser.parse_args()
+    app.run(main, cfg)
+```
+
+Sample configuration files are placed under `configs/`.
+The top level one is `configs/app.yml` for the program to invoke with option `--cfg`:
+
+```sh
+$> ./program.py --cfg configs/app.yml
+```
+
+Looking into `configs/app.yml` below, a custom `!include` constructor is supported to include a specific configuration file that updates its parent configurations.
+
+```yaml
+import:
+  defaults: 
+    app_site: !include defaults.yml
+  app_site: !include sites/site1.yml
+
+app_platform: Apple M1
+app_OS: MacOSX
+```
+
+`configs/defaults.yml` serves as the default site config as follows:
+
+```yaml
+  name: Little Planet Branch
+  location: St. Louis, MO
+  template: XXX
+```
+
+`configs/sites/site1.yml` is the configuration for a specific site that may overwrite the defualts:
+
+```yaml
+  name: site1
+  location: Santa Clara, CA
+  note: Welcome to CA
+```
+
+Since `app.yml` includes `site1.yml`, `site1.yml` will update the configuration in `defaults.yml` as updating a `Python` dictionary.
+Therefore, the resulting configuration is as follows:
+
+```sh
+Running main() with cfg={   '__file__': PosixPath('configs/app.yml'),
+    'app_OS': 'MacOSX',
+    'app_platform': 'Apple M1',
+    'app_site': {   'location': 'Santa Clara, CA',
+                    'name': 'site1',
+                    'note': 'Welcome to CA',
+                    'template': 'XXX'},
+    'daemon': False,
+    'deterministic': False,
+    'dist': None,
+    'dist_backend': 'nccl',
+    'dist_no_sync_bn': False,
+    'dist_port': 25900,
+    'dist_url': 'env://',
+    'gpu': [],
+    'logfile': None,
+    'logging': False,
+    'no_gpu': False,
+    'rank': -1,
+    'seed': 1204,
+    'slurm_constraint': None,
+    'slurm_cpus_per_task': 4,
+    'slurm_export': '',
+    'slurm_mem': '32G',
+    'slurm_nodelist': None,
+    'slurm_nodes': 1,
+    'slurm_ntasks_per_node': 1,
+    'slurm_partition': 'gpu',
+    'slurm_time': '0',
+    'world_size': -1}
+```
+
+Other key-value settings are specified by `ML` for other features.
+Note only keys `name` and `location` are replced while `template` remains as is.
+The semantics for additional keys such as `note` is to merged with the parent configuration.
 
 ### HDF5 Compression
 
