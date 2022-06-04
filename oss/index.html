@@ -178,7 +178,8 @@ The top level one is <code class="language-plaintext highlighter-rouge">configs/
 <p>Since <code class="language-plaintext highlighter-rouge">app.yml</code> includes <code class="language-plaintext highlighter-rouge">site1.yml</code>, <code class="language-plaintext highlighter-rouge">site1.yml</code> will update the configuration in <code class="language-plaintext highlighter-rouge">defaults.yml</code> as updating a <code class="language-plaintext highlighter-rouge">Python</code> dictionary.
 Therefore, the resulting configuration is as follows:</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running main<span class="o">()</span> with <span class="nv">cfg</span><span class="o">={</span>   <span class="s1">'__file__'</span>: PosixPath<span class="o">(</span><span class="s1">'configs/app.yml'</span><span class="o">)</span>,
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt; src/program.py <span class="nt">--cfg</span> configs/app.yml
+Running main<span class="o">()</span> with <span class="nv">cfg</span><span class="o">={</span>   <span class="s1">'__file__'</span>: PosixPath<span class="o">(</span><span class="s1">'configs/app.yml'</span><span class="o">)</span>,
     <span class="s1">'app_OS'</span>: <span class="s1">'MacOSX'</span>,
     <span class="s1">'app_platform'</span>: <span class="s1">'Apple M1'</span>,
     <span class="s1">'app_site'</span>: <span class="o">{</span>   <span class="s1">'location'</span>: <span class="s1">'Santa Clara, CA'</span>,
@@ -210,9 +211,22 @@ Therefore, the resulting configuration is as follows:</p>
     <span class="s1">'world_size'</span>: <span class="nt">-1</span><span class="o">}</span>
 </code></pre></div></div>
 
-<p>Other key-value settings are specified by <code class="language-plaintext highlighter-rouge">ML</code> for other features.
-Note only keys <code class="language-plaintext highlighter-rouge">name</code> and <code class="language-plaintext highlighter-rouge">location</code> are replced while <code class="language-plaintext highlighter-rouge">template</code> remains as is.
-The semantics for additional keys such as <code class="language-plaintext highlighter-rouge">note</code> is to merged with the parent configuration.</p>
+<p>Note only keys <code class="language-plaintext highlighter-rouge">name</code> and <code class="language-plaintext highlighter-rouge">location</code> are replced while <code class="language-plaintext highlighter-rouge">template</code> remains as is.
+The semantics for additional keys such as <code class="language-plaintext highlighter-rouge">note</code> is to merged with the parent configuration.
+Other key-value settings are specified by <code class="language-plaintext highlighter-rouge">ml.argparse</code> as default command line options for other features.
+Rather than adding too many command line options, one or more key-value settings in the configuration can be overwritten in the same syntax <code class="language-plaintext highlighter-rouge">key=value</code> following <code class="language-plaintext highlighter-rouge">--cfg /path/to/config.yml</code> in the command line.
+For example, to replace the value of <code class="language-plaintext highlighter-rouge">app_site.location</code> with <code class="language-plaintext highlighter-rouge">San Jose, CA</code>, the following command line suffices:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt; src/program.py <span class="nt">--cfg</span> configs/app.yml app_site.location<span class="o">=</span><span class="s1">'San Jose, CA'</span>
+Running main<span class="o">()</span> with <span class="nv">cfg</span><span class="o">={</span>   <span class="s1">'__file__'</span>: PosixPath<span class="o">(</span><span class="s1">'configs/app.yml'</span><span class="o">)</span>,
+    <span class="s1">'app_OS'</span>: <span class="s1">'MacOSX'</span>,
+    <span class="s1">'app_platform'</span>: <span class="s1">'Apple M1'</span>,
+    <span class="s1">'app_site'</span>: <span class="o">{</span>   <span class="s1">'location'</span>: <span class="s1">'San Jose, CA'</span>,
+                    <span class="s1">'name'</span>: <span class="s1">'site1'</span>,
+                    <span class="s1">'note'</span>: <span class="s1">'Welcome to CA'</span>,
+                    <span class="s1">'template'</span>: <span class="s1">'XXX'</span><span class="o">}</span>,
+    ...
+</code></pre></div></div>
 
 <h3 id="hdf5-compression">HDF5 Compression</h3>
 
@@ -257,6 +271,7 @@ This makes it easy for business deployment at a low cost.</p>
 <h2 id="ml-ws"><a href="https://github.com/necla-ml/ML-WS">ML-WS</a></h2>
 
 <p>TBD</p>
+
 <h2 id="feedstocks"><a href="https://github.com/necla-ml/feedstocks">feedstocks</a></h2>
 
 <p>TBD</p>
