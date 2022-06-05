@@ -35,7 +35,7 @@ An up-to-date [resume](../assets/ref/resume_farleylai.pdf) is available for refe
 ## Honors and Awards
 
 - 2022 Spot Recognition Award for $1000 to recognize successful POC demo at [Haven for Hope](https://www.havenforhope.org)
-- 2021 NEC Excellence Invention Award for [US17/016260](https://bit.ly/3wZsCil)
+- 2021 NEC Excellent Invention Award for [US17/016260](https://bit.ly/3wZsCil)
 - 2020 NEC Labs Business Contribution Award for Smart Video Surveillance in Retail
 - 2019 Spot Recognition Award for $1500 to recognize key role in NECX/Eigen initiation
 - 2015 SIGBED ESWEEK 2015 Student Travel Grant for $500
