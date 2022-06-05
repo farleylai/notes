@@ -38,7 +38,7 @@ L3D-IVU at CVPR, 2022
 
 
 [![](../images/SplitBrain.png)](){:.image-left }
-SplitBrain: Hybrid Data and Model Parallel Deep Learning  
+<u>SplitBrain: Hybrid Data and Model Parallel Deep Learning</u>  
 **Farley Lai**, Asim Kadav, Erik Kruus  
 arXiv, 2021  
 [[report]](https://bit.ly/3NggDnp)  
@@ -48,7 +48,7 @@ arXiv, 2021
 
 
 [![](../images/KeyNet.png)](){:.image-left }
-Learning Higher-order Object Interactions for Keypoint-based Video Understanding  
+<u>Learning Higher-order Object Interactions for Keypoint-based Video Understanding</u>  
 Yi Huang, Asim Kadav, **Farley Lai**, Deep Patel, Hans Peter Graf  
 SRVU at ICCV, 2021  
 [[paper]](https://bit.ly/3NcLgKI)  
@@ -58,7 +58,7 @@ SRVU at ICCV, 2021
 
 [![](../images/Hopper.png)](){:.image-left }
 <u>Hopper: Multi-hop Transformer for Spatiotemporal Reasoning</u>  
-H. Zhou, A. Kadav, **Farley Lai**, A. Niculescu-Mizil, M. Renqiang Min, M. Kapadia, Hans Peter Graf
+H. Zhou, A. Kadav, **Farley Lai**, A. Niculescu-Mizil, M. Renqiang Min, M. Kapadia, Hans Peter Graf  
 ICLR, 2021  
 [[paper]](https://bit.ly/3aCSOrJ) [[code]](https://github.com/necla-ml/cater-h)  
 
@@ -154,5 +154,5 @@ Renqiang Min, **Farley Lai**, Eric Cosatto, Hans Peter Graf
 
 
 <u style='font-size: 14px'>Unsupervised Image-based Anomaly Detection Using Multi-scale Context-dependent Deep Autoencoding Gaussian Mixture Model</u>  
-Alexandru Niculescu-Mizil, Renqiang Min, Eric Cosatto, **Farley Lai**, Hans Peter GrafXavier Fontaine  
+Alexandru Niculescu-Mizil, Renqiang Min, Eric Cosatto, **Farley Lai**, Hans Peter Graf, Xavier Fontaine  
 [US10853937](https://bit.ly/3GGEB97), 2020
