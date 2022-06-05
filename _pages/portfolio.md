@@ -58,7 +58,7 @@ SRVU at ICCV, 2021
 
 [![](../images/Hopper.png)](){:.image-left }
 <u>Hopper: Multi-hop Transformer for Spatiotemporal Reasoning</u>  
-H. Zhou, A. Kadav, **Farley Lai**, A. Niculescu-Mizil, M. Renqiang Min, M. Kapadia, HP Graf  
+H. Zhou, A. Kadav, **Farley Lai**, A. Niculescu-Mizil, R. Min, M. Kapadia, HP Graf  
 ICLR, 2021  
 [[paper]](https://bit.ly/3aCSOrJ) [[code]](https://github.com/necla-ml/cater-h)  
 
