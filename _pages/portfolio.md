@@ -27,7 +27,7 @@ The portfolio is intended to demonstrate the highlights in selected research and
 [<u>COMPOSER: Compositional Learning of Group Activity in Videos</u>](https://bit.ly/3NcHKzU)  
 Honglu Zhou, Asim Kadav, Aviv Shamsian, Shijie Geng, **Farley Lai**,  
 Long Zhao, Ting Liu, Mubbasir Kapadia, Hans Peter Graf   
-Under Review, 2022  
+ECCV, 2022  
 
 
 [![](../images/CPR.png)](){:.image-left }
