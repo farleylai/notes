@@ -131,10 +131,12 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>TL; DR</p>
+<p>This post compares and highlights the progress in recent generative text-image diffusion models as follows:</p>
 <ul>
-<li>SLURM monitors the total resident memory (RSS) consumed by all the task processes (incl. dataloader workers)  </li>
-<li><code>pin_memory=True</code> increases RSS significantly and may cause leaks with mmap based LMDB, pushing to the memory limit sooner</li>
-<li>PyTorch <code>FastDataLoader</code> or <code>DataLoader</code> created with <code>persistent_workers=True</code> is going to accumulate RSS with workers that never reset MMAP based storage such as <code>LMDB</code> env across epochs</li>
+<li>Diffusion Models Beat GANs (OpenAI)</li>
+<li>GLIDE (OpenAI)</li>
+<li>DALLE·2 (OpenAI)</li>
+<li>Imagen (Google Brain)</li>
 </ul>
 
 </div>
