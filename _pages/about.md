@@ -30,7 +30,6 @@ His M.S. was completed with thesis on distributed mutual exclusion and schedulin
 Before pursuing a Ph.D., he had been working in the surveillance industry and led a project of developing video management software.  
 
 He is reachable via [social networks](http://www.linkedin.com/in/farleylai).  
-An up-to-date [resume](../assets/ref/resume_farleylai.pdf) is available for reference.
 
 ## Honors and Awards
 
